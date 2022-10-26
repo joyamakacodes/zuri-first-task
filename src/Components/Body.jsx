@@ -14,18 +14,18 @@ const Body= ()=>{
                 <div  className="hamburger"><img src={Image6} alt="hamburger" /></div>
             </div>
             
-            <h3 id="Twitter">Onweani Joy</h3>
+            <h3 id="twitter">Onweani Joy</h3>
             <h3 id="slack">Joy Onweani</h3>
             </div>
             <div className="linksSocialContainer">
             <div className="link">
-            <a id="Twitter-link" href="https://twitter.com/OnweaniJoy"
+            <a id="twitter-link" href="https://twitter.com/OnweaniJoy"
             target="_blank">
             Twitter Link
             </a>
             </div>
             <div className="link">
-            <a id="btn-zuri" href="https://training.zuri.team/"
+            <a id="btn_zuri" href="https://training.zuri.team/"
             target="_blank">
             Zuri Team
             </a>
@@ -37,7 +37,7 @@ const Body= ()=>{
             </a>
             </div>
             <div className="link">
-            <a id="book-python" href="https://books.zuri.team/python-for-beginners?ref_id=<joyonweani>"
+            <a id="book_python" href="https://books.zuri.team/python-for-beginners?ref_id=<joyonweani>"
             target="_blank">
             Python Books
             </a>
@@ -50,7 +50,7 @@ const Body= ()=>{
             </div>
             
             <div className="link">
-            <a id="book-design" href="https://books.zuri.team/design-rules"
+            <a id="book_design" href="https://books.zuri.team/design-rules"
             target="_blank">
             Design Books
             </a>
