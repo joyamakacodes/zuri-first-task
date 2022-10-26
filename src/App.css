@@ -60,7 +60,7 @@ a{
 .socials{
   display: flex;
   justify-content: center;
-  column-gap: 15px;
+  gap: 24px;
   margin: 15px 0;
 
 }
