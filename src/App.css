@@ -1,0 +1,116 @@
+ .App {
+  font-family: 'Inter', sans-serif;
+} 
+.container{
+  text-align: center;
+  margin: 20px 50px 0;
+}
+.header{
+  margin: 5px 0;
+}
+h3{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px;
+}
+.linksSocialContainer{
+  margin: 40px;
+}
+.profile{
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  position: relative;
+}
+/* div{
+  border: 2px solid red;
+} */
+.hamburger{
+  display: none;
+}
+.avatar{
+  position: absolute;
+  right: 208px;
+  top: 0px;
+}
+#profile__img{
+  border-radius: 100%;
+  width: 88px;
+  height: 88px;
+}
+#slack{
+  display: none;
+}
+.link{
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 10px;
+  background: #EAECF0;
+  border-radius: 5px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  
+}
+.socials{
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+  margin: 15px 0;
+
+}
+.footer{
+  margin: 65px 60px 0;
+  /* height: 20vh; */
+}
+#footerlogo{
+  width: 150px;
+}
+.footerContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media only screen and (max-width:650px){
+  .container{
+    margin: 20px 5px;
+  }
+  .footer{
+    display: none;
+  }
+  .socials{
+    display: none;
+  }
+  .avatar{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+    position: absolute;
+    right: 1px;
+    top: 0px;
+  }
+  h3{
+    margin: 10px 0;
+  }
+  
+  .linksSocialContainer{
+    margin: 40px 0;
+  }
+  .link{
+    margin: 15px 0;
+    padding: 20px;
+  }
+  /* .profile{
+    column-gap: 100px;
+  } */
+}
+
+
+
