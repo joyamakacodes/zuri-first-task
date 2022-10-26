@@ -31,7 +31,7 @@ h3{
 .avatar{
   position: absolute;
   right: 208px;
-  top: 0px;
+  top: -5px;
 }
 #profile__img{
   border-radius: 100%;
