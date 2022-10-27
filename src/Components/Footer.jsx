@@ -13,7 +13,7 @@ const Footer= ()=>{
             <p>HNG Internship 9 Frontend Task</p>
             </div>
             <div>
-            <img src={Image1} alt="zuriSvg" />
+            <img src={Image1} alt="zuriSvg" id='footerlogo' />
             </div>
         </div>
            

@@ -22,9 +22,6 @@ h3{
   column-gap: 50px;
   position: relative;
 }
-/* div{
-  border: 2px solid red;
-} */
 .hamburger{
   display: none;
 }
@@ -61,12 +58,11 @@ a{
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin: 15px 0;
+  margin: 20px 0;
 
 }
 .footer{
   margin: 65px 60px 0;
-  /* height: 20vh; */
 }
 #footerlogo{
   width: 150px;
@@ -78,14 +74,22 @@ a{
 
 
 @media only screen and (max-width:650px){
+  .App{
+    height: 900px;
+  }
   .container{
-    margin: 20px 5px;
+    margin: 40px 5px;
+    
+  }
+  .footerContainer{
+    flex-direction: column;
+    font-size: 14px;
   }
   .footer{
-    display: none;
+    margin: 100px 0 0;
   }
   .socials{
-    display: none;
+    margin-top: 40px;
   }
   .avatar{
     display: none;
@@ -99,7 +103,9 @@ a{
   h3{
     margin: 10px 0;
   }
-  
+  #footerlogo{
+    width: 99px;
+  }
   .linksSocialContainer{
     margin: 40px 0;
   }
@@ -107,9 +113,6 @@ a{
     margin: 15px 0;
     padding: 20px;
   }
-  /* .profile{
-    column-gap: 100px;
-  } */
 }
 
 

@@ -59,9 +59,7 @@ const Body= ()=>{
             <img src={Image3} alt="zuriSvg" />
             <img src={Image2} alt="zuriSvg" />
             </div>
-            </div>
-             
-            
+            </div>  
         </div>
     )
 }
