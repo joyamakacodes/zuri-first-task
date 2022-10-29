@@ -5,6 +5,38 @@ import Image5 from '../Images/avatar.svg';
 import Image6 from '../Images/hamburger.svg';
 
 const Body= ()=>{
+    const links=[
+        {
+            id:"twitter",
+            name:"Twitter Link",
+            link:"https://twitter.com/OnweaniJoy"
+        },
+        {
+            id:"btn_zuri",
+            name:"Zuri Team",
+            link:"https://training.zuri.team/"
+        },
+        {
+            id:"books",
+            name:"Zuri Books",
+            link:"http://books.zuri.team"
+        },
+        {
+            id:"book_python",
+            name:"Python Books",
+            link:"https://books.zuri.team/python-for-beginners?ref_id=<JoyOnweani>"
+        },
+        {
+            id:"pitch",
+            name:"Background Checks For Coders",
+            link:"https://background.zuri.team"
+        },
+        {
+            id:"book_design",
+            name:"Design Books",
+            link:"https://books.zuri.team/design-rules"
+        }
+    ]
     return(
         <div className="container">
           <div className="header">
@@ -18,46 +50,23 @@ const Body= ()=>{
             <h3 id="slack">Joy Onweani</h3>
             </div>
             <div className="linksSocialContainer">
-            <div className="link">
-            <a id="twitter-link" href="https://twitter.com/OnweaniJoy"
-            target="_blank">
-            Twitter Link
-            </a>
-            </div>
-            <div className="link">
-            <a id="btn_zuri" href="https://training.zuri.team/"
-            target="_blank">
-            Zuri Team
-            </a>
-            </div>
-            <div className="link">
-            <a id="books" href="http://books.zuri.team"
-            target="_blank">
-            Zuri Books
-            </a>
-            </div>
-            <div className="link">
-            <a id="book_python" href="https://books.zuri.team/python-for-beginners?ref_id=<joyonweani>"
-            target="_blank">
-            Python Books
-            </a>
-            </div>
-            <div className="link">
-            <a id="pitch" href="https://background.zuri.team"
-            target="_blank">
-            Background Checks For Coders
-            </a>
-            </div>
-            
-            <div className="link">
-            <a id="book_design" href="https://books.zuri.team/design-rules"
-            target="_blank">
-            Design Books
-            </a>
-            </div>
+        
+            {links.map((link)=>(
+                     <a className="link" key={link.id} id={link.id} href={link.link}
+                     target={"_blank"}
+                     rel="noopener noreferrer">
+                     <button>
+                     {link.name}
+                     </button>
+                     </a>
+                ))}
+        
             <div className="socials">
-            <img src={Image3} alt="zuriSvg" />
-            <img src={Image2} alt="zuriSvg" />
+            <img src={Image3} alt="zuriSlack" />
+            <a href="https://github.com/joyamakacodes/zuri-first-task" target={"_blank"} rel="noopener noreferrer" >
+            <img src={Image2} alt="zurigithub" />
+            </a>
+            
             </div>
             </div>  
         </div>
