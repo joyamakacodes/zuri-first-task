@@ -3,6 +3,7 @@ import Image2 from '../Images/Icon.svg';
 import Image3 from '../Images/slack.svg';
 import Image5 from '../Images/avatar.svg';
 import Image6 from '../Images/hamburger.svg';
+import {Outlet, Link} from 'react-router-dom'
 
 const Body= ()=>{
     const links=[
@@ -31,11 +32,6 @@ const Body= ()=>{
             name:"Background Checks For Coders",
             link:"https://background.zuri.team"
         },
-        {
-            id:"book_design",
-            name:"Design Books",
-            link:"https://books.zuri.team/design-rules"
-        }
     ]
     return(
         <div className="container">
@@ -60,6 +56,7 @@ const Body= ()=>{
                      </button>
                      </a>
                 ))}
+                <Link to= 'Contact' id="contact" className="link"><button>Contact</button> </Link>
         
             <div className="socials">
             <img src={Image3} alt="zuriSlack" />
@@ -68,7 +65,8 @@ const Body= ()=>{
             </a>
             
             </div>
-            </div>  
+            </div> 
+            <Outlet></Outlet> 
         </div>
     )
 }

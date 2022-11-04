@@ -1,13 +1,19 @@
 import './App.css';
-import Body from './Components/Body';
-import Footer from './Components/Footer'
+import Home from './Components/Body';
+import Contact from './Screens/Contact'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/Contact' element= {<Contact/>}/>
+      </Routes>
+      </BrowserRouter>
 
-       <Body/>
-       <Footer/>
+      
       
     </div>
   );
