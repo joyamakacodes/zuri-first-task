@@ -1,3 +1,8 @@
+ *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
  .App {
   font-family: 'Inter', sans-serif;
 } 
@@ -24,22 +29,7 @@ button{
   margin: 15px 0; 
   font-size: 15px;
 }
-.contact{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.inputCon{
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-#email{
-  width: 100%;
-}
-.formContainer{
-  width: 30%;
-}
+
 .profile{
   display: flex;
   justify-content: center;
@@ -95,14 +85,69 @@ a{
   justify-content: space-between;
 }
 /* Contact Me Page */
-.formContainer{
+.contact{
   display: flex;
   flex-direction: column;
-  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+.inputCon{
+  display: flex;
+  column-gap: 20px;
+}
+form{
+  box-sizing: border-box;
+  font-size: 14px;
+}
+label{
+  font-weight: bolder;
+}
+
+.input{
+  width: 328px;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #D0D5DD;
+}
+.contact textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #D0D5DD;
+
+}
+.contact p{
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+.form p{
+  font-size: 14px;
+}
+.contact h2{
+  margin: 10px 0;
+}
+#email{
+  width: 100%;
+  padding: 10px;
+}
+
+.formContainer{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 50px ;
 }
 form button{
+  width: 100%;
   background: #1570EF;
   border: none;
+  padding: 10px 30px;
+  margin: 10px 0;
+  border-radius: 8px;
 }
 
 @media only screen and (max-width:650px){
