@@ -21,11 +21,11 @@ const Contact = ()=>{
         }else{
             alert("Message Sent")
         }
-        
+        window.reload()
     }
     
     return(
-        <>
+        <div className="contactBody">
                 <div className="contact">
         <div className="formContainer">
             <h2>Contact Me </h2>
@@ -51,14 +51,14 @@ const Contact = ()=>{
                     <input className="input" type="text" id="email" placeholder="yourname@email.com" onChange={(e)=> setName(e.target.value)} />
                     </div>
                 <label>Message</label>
-                <textarea id="message" rows="6" placeholder="Send me a message and I'll reply you as soon as possible.."></textarea>
-                <p><input type="checkbox"/>  You agree to providing your data to Joy Onweani who may contact you.</p>
+                <textarea id="message" rows="6" placeholder="Send me a message and I'll reply you as soon as possible.." onChange={(e)=> setName(e.target.value)} ></textarea>
+                <p id="textareatext"><input type="checkbox"/>  You agree to providing your data to Joy Onweani who may contact you.</p>
                 <button id="btn__submit">Submit</button>
                 </form>
         </div>
     </div>
     <Footer/>
-        </>
+        </div>
 
     )
 }

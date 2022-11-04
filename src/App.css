@@ -74,6 +74,7 @@ a{
   margin: 20px 0;
 
 }
+/* Footer */
 .footer{
   margin: 65px 60px 0;
 }
@@ -85,6 +86,9 @@ a{
   justify-content: space-between;
 }
 /* Contact Me Page */
+.contactBody{
+  padding-bottom: 30px;
+}
 .contact{
   display: flex;
   flex-direction: column;
@@ -121,9 +125,9 @@ label{
 .contact p{
   font-size: 18px;
   margin-bottom: 30px;
-  line-height: 30px;
+  line-height: 20px;
 }
-.form p{
+#textareatext{
   font-size: 14px;
 }
 .contact h2{
@@ -139,7 +143,7 @@ label{
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 50px ;
+  margin: 20px ;
 }
 form button{
   width: 100%;
@@ -196,6 +200,22 @@ form button{
     margin: 15px 0;
     padding: 20px;
   }
+  .contact{
+    margin: 10px;
+  }
+  .formContainer{
+    width: 100%;
+  }
+  .inputCon{
+    display: block;
+  }
+  .input{
+    width: 100%;
+  }
+  /* div{
+    border: 2px solid red;
+  } */
+  
 }
 
 
